@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background {
+  background-color: #222222;
+  color: #fff;
+}
+
+.changeImage {
+  filter: grayscale(100%);
+}
+body{
+  /* background-color: rgb(189, 230, 237); */
+  /* background-color: rgb(206, 234, 206); */
+  background:-webkit-linear-gradient(rgb(136, 187, 197),rgb(179, 201, 179));
+}
