@@ -1,0 +1,15 @@
+version: "2.16"
+
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+
+  load-tester:
+    image: grafana/k6
+    entrypoint: ["k6", "run", "/scripts/test.js"]
+    volumes:
+      - ./scripts:/scripts

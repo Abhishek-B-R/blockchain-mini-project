@@ -88,6 +88,7 @@ export default ({ getModel, setGetModel, getShipment }) => {
                   Paid:{" "}
                   {singleShipmentData.isPaid ? "Complete" : "Not Complete"}
                 </p>
+                <p>Crop Name: Wheat</p>
               </div>
             )}
           </div>
